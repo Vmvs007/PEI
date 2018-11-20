@@ -1,0 +1,8 @@
+<loja>
+	<id/><!--int-->
+	<nome/><!--string-->
+	<nif/><!--nif-->
+	<morada/><!--string-->
+	<telemovel/><!--telemovel-->
+	<email/><!--email-->
+</loja>

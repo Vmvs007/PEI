@@ -5,11 +5,19 @@
 	xmlns="http://www.BikeOnTrack.pt/Store"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/Store lojaXSD.xsd">
 
-	<name>FamaBike </name>
-	<nif>123456789</nif>
-	<address>Rua António </address>
+	<name>Famabike - Comércio de Bicicletas, Lda</name>
+	<storeID>00001</storeID>
+	<nif>505123456</nif>
+	<address>
+		<street>Rua António Ferreira de Matos</street>
+		<doorNum>9</doorNum>
+		<postalCode>4760018</postalCode>
+		<city>Vila Nova de Famalicão</city>
+		<district>Porto</district>
+		<country>Portugal</country>
+	</address>
 	<contacts>
-		<phone>913455077 </phone>
-		<email>famabike@famabike.com </email>
+		<phone>913455077</phone>
+		<email>famabike@famabike.com</email>
 	</contacts>
 </store>

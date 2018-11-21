@@ -5,33 +5,29 @@
 	targetNamespace="http://www.BikeOnTrack.pt/AddressType"
 	elementFormDefault="unqualified">
 
-	<xs:simpleType name="street">
+	<xs:simpleType name="typeStreet">
 		<xs:restriction base="xs:string"/>
 	</xs:simpleType>
 
-	<xs:simpleType name="doorNum">
+	<xs:simpleType name="typeDoorNum">
 		<xs:restriction base="xs:integer"/>
 	</xs:simpleType>
 
-	<simpleType name="codPostal">
+	<simpleType name="typePostalCode">
 		<xs:restriction base="xs:integer">
 			<xs:pattern value="([0-9]{4})"/>
 		</xs:restriction>
 	</simpleType>
 
-	<simpleType name="freguesia">
+	<simpleType name="typeCity">
 		<xs:restriction base="xs:string"/>
 	</simpleType>
 
-	<simpleType name="concelho">
+	<simpleType name="typeDistrict">
 		<xs:restriction base="xs:string"/>
 	</simpleType>
 
-	<simpleType name="distrito">
-		<xs:restriction base="xs:string"/>
-	</simpleType>
-
-	<simpleType name="pais">
+	<simpleType name="typeCountry">
 		<xs:restriction base="xs:string"/>
 	</simpleType>
 

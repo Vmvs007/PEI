@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="http://www.BikeOnTrack.pt/Store"
-	targetNamespace="http://www.BikeOnTrack.pt/Store"
+	xmlns="http://www.BikeOnTrack.pt/Customer"
+	targetNamespace="http://www.BikeOnTrack.pt/Customer"
 	xmlns:c="http://www.BikeOnTrack.pt/CommonTypes"
 	elementFormDefault="qualified">
 	
 	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/AddressType"/>
 
-	<xs:element name="store">
+	<xs:element name="customer">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="name" type="xs:string"/>
-				<xs:element name="storeID" type="xs:integer"/>
+				<xs:element name="customerID" type="xs:integer"/>
 				<xs:element name="nif" type="c:typeNIF"/>
 				<xs:complexType>
 					<xs:sequence>

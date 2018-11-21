@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.BikeOnTrack.pt/CurrencyRate"
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/CurrencyRate currencyRateXSD.xsd">
+
+	<currencyRate></currencyRate>
+	<currencyRateDate></currencyRateDate>
+	<fromCurrencyRate></fromCurrencyRate>
+	<toCurrencyRate></toCurrencyRate>
+	<rateVal></rateVal>
+
+</exercise>

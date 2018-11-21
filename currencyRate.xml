@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exercise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<currencyRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://www.BikeOnTrack.pt/CurrencyRate"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/CurrencyRate currencyRateXSD.xsd">
 
@@ -10,4 +10,4 @@
 	<toCurrencyRate></toCurrencyRate>
 	<rateVal></rateVal>
 
-</exercise>
+</currencyRate>

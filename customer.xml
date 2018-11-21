@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<customer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://www.BikeOnTrack.pt/Customer"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/Customer customerXSD.xsd">
 
@@ -20,4 +19,4 @@
 		<phone>911222333</phone>
 		<email>arminho123@mail.com</email>
 	</contacts>
-</store>
+</customer>

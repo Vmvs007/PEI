@@ -1,0 +1,7 @@
+<CurrencyRate>
+	<CurrencyRateID/>
+	<CurrencyRateDate/>
+	<FromCurrencyCode/>
+	<ToCurrencyCode/>
+	<RateVal/>
+</CurrencyRate>

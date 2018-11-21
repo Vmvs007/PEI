@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.BikeOnTrack.pt/Store"
+	targetNamespace="http://www.BikeOnTrack.pt/Store"
+	xmlns:c="http://www.BikeOnTrack.pt/CommonTypes"
+	elementFormDefault="qualified">
+	
+	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
+
+	<xs:element name="store">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="nif" type="c:typeNIF"/>
+				<xs:element name="address" type="xs:string"/>
+				<xs:element name="contacts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="phone" type="c:typePhone"/>
+							<xs:element name="email" type="c:typeEmail"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

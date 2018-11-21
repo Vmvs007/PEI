@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.BikeOnTrack.pt/Store"
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/Store lojaXSD.xsd">
+
+	<name>FamaBike </name>
+	<nif>123456789</nif>
+	<address>Rua António </address>
+	<contacts>
+		<phone>913455077 </phone>
+		<email>famabike@famabike.com </email>
+	</contacts>
+</store>

@@ -1,0 +1,8 @@
+<exercicio>
+	<id/><!-- int-->
+	<dataInicio/><!--data-->
+	<dataFim/><!--data-->
+	<idMoeda/><!--int-->
+	<idLoja/><!--int-->
+	<dataDoc/><!--data-->
+</exercicio>

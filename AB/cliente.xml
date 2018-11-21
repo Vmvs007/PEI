@@ -1,0 +1,8 @@
+<cliente>
+	<id/><!-- int -->
+	<nome/><!-- string -->
+	<email/><!-- email -->
+	<telemovel/><!-- telemovel -->
+	<nif/><!-- nif -->
+	<morada/>
+</cliente>

@@ -1,6 +1,0 @@
-<produto>
-	<id/><!-- int-->
-	<nome/><!-- string -->
-	<informacao/><!--string-->
-	<valor/><!--float-->
-</produto>

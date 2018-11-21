@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://www.BikeOnTrack.pt/Exercise"
+	targetNamespace="https://www.BikeOnTrack.pt/Exercise"
+	xmlns:c ="https://www.BikeOnTrack.pt/CommonTypes"
+	elementFormDefault="qualified">
+
+	<xs:element name="Exercise">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="exerciseID" type="xs:integer"/>
+				<xs:element name="startDate" type="xs:Date"/>
+				<xs:element name="endDate" type="xs:Date"/>
+				<xs:element name="exerciseDate" type="xs:Date"/>
+				<xs:element name="storeID" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

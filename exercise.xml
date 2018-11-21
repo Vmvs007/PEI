@@ -4,8 +4,8 @@
 	xmlns="http://www.BikeOnTrack.pt/Exercise"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/Exercise exerciseXSD.xsd">
 
-	<exerciseID>0001</exerciseID>
-	<storeID>0002</storeID>
+	<exerciseID>00001</exerciseID>
+	<storeID>00001</storeID>
 	<startDate>2018-10-21</startDate>
 	<endDate>2018-11-21</endDate>
 	<exerciseDate>2018-11-19</exerciseDate>

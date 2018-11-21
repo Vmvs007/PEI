@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://www.BikeOnTrack.pt/Sale"
+	targetNamespace="https://www.BikeOnTrack.pt/Sale"
+	xmlns:c ="https://www.BikeOnTrack.pt/CommonTypes"
+	elementFormDefault="qualified">
+
+	<xs:element name="Sale">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="saleID" type="xs:integer"/>
+				<xs:element name="customerID" type="xs:integer"/>
+				<xs:element name="exerciseID" type="xs:integer"/>
+				<xs:element name="exerciseDate" type="xs:Date"/>
+				<xs:element name="totalAmount" type="xs:double"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

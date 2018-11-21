@@ -24,15 +24,16 @@
 						<xs:element name="district" type="c:district"/>
 						<xs:element name="country" type="c:country"/>
 					</xs:sequence>
-					<xs:element name="contacts">
-						<xs:complexType>
-							<xs:sequence>
-								<xs:element name="phone" type="c:typePhone"/>
-								<xs:element name="email" type="c:typeEmail"/>
-							</xs:sequence>
-						</xs:complexType>
-					</xs:element>
-				</xs:sequence>
-			</xs:complexType>
-		</xs:element>
-	</xs:schema>
+				</xs:complexType>
+				<xs:element name="contacts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="phone" type="c:typePhone"/>
+							<xs:element name="email" type="c:typeEmail"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

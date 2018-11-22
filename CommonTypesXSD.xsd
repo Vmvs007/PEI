@@ -21,7 +21,6 @@
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[^@]+@[^\.]+\..+"/>
 		</xs:restriction>
-<<<<<<< HEAD
 	</xs:simpleType>
 
 

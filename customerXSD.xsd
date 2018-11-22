@@ -7,31 +7,22 @@
 	elementFormDefault="qualified">
 	
 	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
-	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/AddressType"/>
 
 	<xs:element name="customer">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="name" type="xs:string"/>
+				<xs:element name="name" type="xs:string" />
 				<xs:element name="customerID" type="xs:integer"/>
 				<xs:element name="nif" type="c:typeNIF"/>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="street" type="c:typeStreet"/>
-						<xs:element name="doorNum" type="c:typeDoorNum"/>
-						<xs:element name="postalCode" type="c:typePostalCode"/>
-						<xs:element name="city" type="c:city"/>
-						<xs:element name="district" type="c:district"/>
-						<xs:element name="country" type="c:country"/>
-					</xs:sequence>
-					<xs:element name="contacts">
+				<xs:element name="address" type="c:typeAddress"/>
+				<xs:element name="contacts">
 						<xs:complexType>
 							<xs:sequence>
-								<xs:element name="phone" type="c:typePhone"/>
-								<xs:element name="email" type="c:typeEmail"/>
-							</xs:sequence>
-						</xs:complexType>
-					</xs:element>
+							<xs:element name="phone" type="c:typePhone"/>
+							<xs:element name="email" type="c:typeEmail"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>

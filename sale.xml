@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<sale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<Sale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://www.BikeOnTrack.pt/Sale"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/Sale saleXSD.xsd">
 
-	<saleID>00001</exerciseID>
+	<saleID>00001</saleID>
 	<customerID>00001</customerID>
 	<exerciseID>00001</exerciseID>
-	<exerciseDate>2018-10-21</exerciseDate>
 	<totalAmount>3500.35</totalAmount>
-</saleID>
+</Sale>
 

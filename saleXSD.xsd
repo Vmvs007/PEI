@@ -11,7 +11,6 @@
 				<xs:element name="saleID" type="xs:integer"/>
 				<xs:element name="customerID" type="xs:integer"/>
 				<xs:element name="exerciseID" type="xs:integer"/>
-				<xs:element name="exerciseDate" type="xs:Date"/>
 				<xs:element name="totalAmount" type="xs:double"/>
 			</xs:sequence>
 		</xs:complexType>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<currencyRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<currencyRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://www.BikeOnTrack.pt/CurrencyRate"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/CurrencyRate currencyRateXSD.xsd">
 
-	<currencyRateID>1</currencyRateID>
-	<currencyRateDate>1998-02-25</currencyRateDate>
-	<fromCurrencyRate>USA</fromCurrencyRate>
-	<toCurrencyRate>EUA</toCurrencyRate>
-	<rateVal>0.9</rateVal>
+	<currencyRate></currencyRate>
+	<currencyRateDate></currencyRateDate>
+	<fromCurrencyRate></fromCurrencyRate>
+	<toCurrencyRate></toCurrencyRate>
+	<rateVal></rateVal>
 
 </currencyRate>

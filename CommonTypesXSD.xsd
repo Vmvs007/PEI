@@ -21,7 +21,7 @@
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[^@]+@[^\.]+\..+"/>
 		</xs:restriction>
-	</xs:simpleType><!--
+	</xs:simpleType>
 	<xs:complexType name="typeAddress">
 		<xs:sequence>
 			<xs:element name="street" type="xs:string"/>
@@ -38,6 +38,6 @@
 			<xs:element name="country" type="xs:string"/>
 		</xs:sequence>
 
-	</xs:complexType>-->
+	</xs:complexType>
 
 </xs:schema>

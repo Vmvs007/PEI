@@ -2,7 +2,7 @@
 
 <store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://www.BikeOnTrack.pt/Store"
-	xsi:schemaLocation="http://www.BikeOnTrack.pt/Store lojaXSD.xsd">
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/Store storeXSD.xsd">
 
 	<name>Famabike - Comércio de Bicicletas, Lda</name>
 	<storeID>00001</storeID>

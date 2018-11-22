@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://www.BikeOnTrack.pt/Product"
+	targetNamespace="https://www.BikeOnTrack.pt/Product"
+	xmlns:c ="https://www.BikeOnTrack.pt/CommonTypes"
+	elementFormDefault="qualified">
+
+	<xs:element name="Product">
+
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="productYear" type="xs:Date"/>
+				<xs:element name="productID" type="xs:integer"/>
+				<xs:element name="price" type="xs:double"/>
+				<xs:element name="colour" type="xs:string"/>
+				<xs:element name="productType" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+
+	</xs:element>
+</xs:schema>

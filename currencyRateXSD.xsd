@@ -1,18 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns="https://www.BikeOnTrack.pt/CurrencyRates"
 	targetNamespace="https://www.BikeOnTrack.pt/CurrencyRates"
 	xmlns:c ="https://www.BikeOnTrack.pt/CommonTypes"
+	xmlns="https://www.BikeOnTrack.pt/CurrencyRate"
+	targetNamespace="https://www.BikeOnTrack.pt/CurrencyRate"
 	elementFormDefault="qualified">
 
-	<xs:element name="CurrencyRates">
-		<xs:complexType mixed="true">
+	<xs:element name="currencyRate">
+		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="currencyRate" type="xs:integer"/>
+				<xs:element name="currencyRateID" type="xs:integer"/>
 				<xs:element name="currencyRateDate" type="xs:date"/>
-				<xs:element name="fromCurrencyCode" type="xs:integer"/>
-				<xs:element name="toCurrencyCode" type="xs:integer"/>
+				<xs:element name="fromCurrencyCode">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[A-Z][A-Z][A-Z]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="toCurrencyCode">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[A-Z][A-Z][A-Z]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
 				<xs:element name="rateVal" type="xs:double"/>
 			</xs:sequence>
 		</xs:complexType>

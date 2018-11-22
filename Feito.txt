@@ -1,1 +1,2 @@
 -StoreXSD e storeXML
+-CustomerXSD e customerXML

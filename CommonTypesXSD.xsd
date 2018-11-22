@@ -22,6 +22,16 @@
 			<xs:pattern value="[^@]+@[^\.]+\..+"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+
+	<xs:simpleType name="typeZipCode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{4}-[0-9]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+
+<!-- Não está ser usado
 	<xs:complexType name="typeAddress">
 		<xs:sequence>
 			<xs:element name="street" type="xs:string"/>
@@ -37,7 +47,6 @@
 			<xs:element name="district" type="xs:string"/>
 			<xs:element name="country" type="xs:string"/>
 		</xs:sequence>
-
-	</xs:complexType>
+	</xs:complexType>-->
 
 </xs:schema>

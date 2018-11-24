@@ -5,14 +5,14 @@
 	xmlns:c="http://www.BikeOnTrack.pt/CommonTypes"
 	elementFormDefault="qualified">
 	
+	
 	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 
-	<xs:element name="customer">
-		<xs:complexType>
+		<xs:complexType name="customer">
 			<xs:sequence>
 				<xs:element name="name" type="xs:string" />
-				<xs:element name="customerID" type="xs:integer"/>
-				<xs:element name="nif" type="c:typeNIF"/>
+				<xs:element name="customerID" type="xs:positiveInteger"/>
+				<xs:element name="nif" type="c:typeNIF"/> 
 				<xs:element name="address">
 					<xs:complexType>
 						<xs:sequence>
@@ -35,5 +35,4 @@
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
 </xs:schema>

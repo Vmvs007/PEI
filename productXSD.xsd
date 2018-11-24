@@ -4,10 +4,9 @@
 	targetNamespace="http://www.BikeOnTrack.pt/Product"
 	elementFormDefault="qualified">
 
-	<xs:element name="product">
-		<xs:complexType mixed="true">
+		<xs:complexType name="product" mixed="true">
 			<xs:sequence>
-				<xs:element name="productID" type="xs:integer"/>
+				<xs:element name="productID" type="xs:positiveInteger"/>
 				<xs:element name="name" type="xs:string"/>
 				<xs:element name="productYear" type="xs:gYear"/>
 				<xs:element name="price" type="xs:double"/>
@@ -24,5 +23,4 @@
 				</xs:element> 
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
 </xs:schema>

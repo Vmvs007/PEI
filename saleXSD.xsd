@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="https://www.BikeOnTrack.pt/Sale"
-	targetNamespace="https://www.BikeOnTrack.pt/Sale"
-	xmlns:c ="https://www.BikeOnTrack.pt/CommonTypes"
+	xmlns="http://www.BikeOnTrack.pt/Sale"
+	targetNamespace="http://www.BikeOnTrack.pt/Sale"
+	xmlns:c ="http://www.BikeOnTrack.pt/CommonTypes"
 	elementFormDefault="qualified">
 
 	<xs:element name="Sale">

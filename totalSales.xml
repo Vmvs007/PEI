@@ -4,8 +4,8 @@
 	xmlns="http://www.BikeOnTrack.pt/TotalSales"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/TotalSales saleXSD.xsd">
 
-	<totalSalesID>00001</totalSalesID>
-	<exerciseID>00001</exerciseID>
+	<totalSalesID>1</totalSalesID>
+	<exerciseID>1</exerciseID>
 	<productsAmount>23</productsAmount>
 	<totalSalesAmount>13500.35</totalSalesAmount>
 </totalSales>

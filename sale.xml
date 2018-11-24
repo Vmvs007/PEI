@@ -3,10 +3,9 @@
 <Sale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://www.BikeOnTrack.pt/Sale"
 	xsi:schemaLocation="http://www.BikeOnTrack.pt/Sale saleXSD.xsd">
-
-	<saleID>00001</saleID>
-	<customerID>00001</customerID>
-	<exerciseID>00001</exerciseID>
+	<saleID>1</saleID>
+	<customerID>1</customerID>
+	<exerciseID>1</exerciseID>
 	<totalAmount>3500.35</totalAmount>
 </Sale>
 

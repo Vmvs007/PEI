@@ -1,3 +1,4 @@
--StoreXSD e storeXML
--CustomerXSD e customerXML
+-storeXSD e storeXML
+-customerXSD e customerXML
 -currencyRateXSD e currencyRateXML
+-productXSD e productXML

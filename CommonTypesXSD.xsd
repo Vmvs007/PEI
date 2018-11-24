@@ -21,7 +21,6 @@
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[^@]+@[^\.]+\..+"/>
 		</xs:restriction>
-<<<<<<< HEAD
 	</xs:simpleType>
 
 
@@ -31,30 +30,5 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-
-<!-- Não está ser usado
-=======
-	</xs:simpleType><!--
->>>>>>> parent of c2bfba2... Revert "currencyrate"
-	<xs:complexType name="typeAddress">
-		<xs:sequence>
-			<xs:element name="street" type="xs:string"/>
-			<xs:element name="doorNum" type="xs:integer"/>
-			<xs:element name="postalCode">
-				<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:pattern value="^\d{4}(-\d{3})?$"/>
-				</xs:restriction>
-			</xs:simpleType>
-			</xs:element>
-			<xs:element name="city" type="xs:string"/>
-			<xs:element name="district" type="xs:string"/>
-			<xs:element name="country" type="xs:string"/>
-		</xs:sequence>
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of c2bfba2... Revert "currencyrate"
-	</xs:complexType>-->
 
 </xs:schema>

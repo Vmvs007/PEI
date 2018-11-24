@@ -4,8 +4,8 @@
 
 	<currencyRateID>1</currencyRateID>
 	<currencyRateDate>1998-02-25</currencyRateDate>
-	<fromCurrencyRate>USA</fromCurrencyRate>
-	<toCurrencyRate>EUA</toCurrencyRate>
+	<fromCurrencyCode>USA</fromCurrencyCode>
+	<toCurrencyCode>EUA</toCurrencyCode>
 	<rateVal>0.9</rateVal>
 
 </currencyRate>

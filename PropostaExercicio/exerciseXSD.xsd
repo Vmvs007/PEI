@@ -8,8 +8,8 @@
 
 	<xs:import schemaLocation="saleXSD.xsd" namespace="http://www.BikeOnTrack.pt/sale"/>
 
-	<xs:element name="exercise">
-		<xs:complexType mixed="true">
+	
+		<xs:complexType name="exercise" mixed="true">
 			<xs:sequence>
 				<xs:element name="exerciseID" type="xs:positiveInteger"/>
 				<xs:element name="startDate" type="xs:dateTime"/>
@@ -18,5 +18,4 @@
 				<xs:element name="sale" type="sal:sale" minOccurs="1" maxOccurs="unbounded"/> 
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
 </xs:schema>

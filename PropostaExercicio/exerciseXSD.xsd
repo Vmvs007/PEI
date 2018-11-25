@@ -12,9 +12,9 @@
 		<xs:complexType name="exercise" mixed="true">
 			<xs:sequence>
 				<xs:element name="exerciseID" type="xs:positiveInteger"/>
-				<xs:element name="startDate" type="xs:dateTime"/>
-				<xs:element name="endDate" type="xs:dateTime"/>
-				<xs:element name="exerciseDate" type="xs:dateTime"/>
+				<xs:element name="startDate" type="xs:date"/>
+				<xs:element name="endDate" type="xs:date"/>
+				<xs:element name="exerciseDate" type="xs:date"/>
 				<xs:element name="sale" type="sal:sale" minOccurs="1" maxOccurs="unbounded"/> 
 			</xs:sequence>
 		</xs:complexType>

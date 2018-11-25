@@ -17,7 +17,7 @@
 		<xs:complexType name="sale" mixed="true">
 			<xs:sequence>
 				<xs:element name="saleID" type="xs:positiveInteger"/>
-				<xs:element name="orderDate" type="xs:dateTime"/>
+				<xs:element name="orderDate" type="xs:date"/>
 				<xs:element name="customer" type="cu:customer"/>
 				<xs:element name="currencyRate" type="cr:currencyRate"/>
 				<xs:element name="total" type="xs:double"/>

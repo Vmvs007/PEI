@@ -28,12 +28,12 @@
 	</contacts>
 	<exercise>
 		<ex:exerciseID>1</ex:exerciseID>
-		<ex:startDate>2011-05-31T00:00:00.000</ex:startDate>
-		<ex:endDate>2012-05-31T00:00:00.000</ex:endDate>
-		<ex:exerciseDate>2012-05-31T00:00:00.000</ex:exerciseDate>
+		<ex:startDate>2011-05-31</ex:startDate>
+		<ex:endDate>2012-05-31</ex:endDate>
+		<ex:exerciseDate>2012-05-31</ex:exerciseDate>
 		<ex:sale>
 			<sal:saleID>1</sal:saleID>
-			<sal:orderDate>2011-05-31T00:00:00.000</sal:orderDate>
+			<sal:orderDate>2011-05-31</sal:orderDate>
 			<sal:customer>
 				<cu:name>Arminho Miguel de Sá Santos</cu:name>
 				<cu:customerID>1</cu:customerID>
@@ -90,7 +90,7 @@
 		</ex:sale>
 		<ex:sale>
 			<sal:saleID>2</sal:saleID>
-			<sal:orderDate>2011-06-30T00:00:00.000</sal:orderDate>
+			<sal:orderDate>2011-06-30</sal:orderDate>
 			<sal:customer>
 				<cu:name>Lara Gonçalves</cu:name>
 				<cu:customerID>2</cu:customerID>
@@ -148,12 +148,12 @@
 	</exercise>
 	<exercise>
 		<ex:exerciseID>2</ex:exerciseID>
-		<ex:startDate>2011-05-31T00:00:00.000</ex:startDate>
-		<ex:endDate>2012-05-31T00:00:00.000</ex:endDate>
-		<ex:exerciseDate>2012-05-31T00:00:00.000</ex:exerciseDate>
+		<ex:startDate>2011-05-31</ex:startDate>
+		<ex:endDate>2012-05-31</ex:endDate>
+		<ex:exerciseDate>2012-05-31</ex:exerciseDate>
 		<ex:sale>
 			<sal:saleID>1</sal:saleID>
-			<sal:orderDate>2011-05-31T00:00:00.000</sal:orderDate>
+			<sal:orderDate>2011-05-31</sal:orderDate>
 			<sal:customer>
 				<cu:name>Arminho Miguel de Sá Santos</cu:name>
 				<cu:customerID>1</cu:customerID>
@@ -210,7 +210,7 @@
 		</ex:sale>
 		<ex:sale>
 			<sal:saleID>2</sal:saleID>
-			<sal:orderDate>2011-06-30T00:00:00.000</sal:orderDate>
+			<sal:orderDate>2011-06-30</sal:orderDate>
 			<sal:customer>
 				<cu:name>Lara Gonçalves</cu:name>
 				<cu:customerID>2</cu:customerID>

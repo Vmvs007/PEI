@@ -11,12 +11,12 @@
 	>
 
 	<exerciseID>1</exerciseID>
-	<startDate>2011-05-31T00:00:00.000</startDate>
-	<endDate>2012-05-31T00:00:00.000</endDate>
-	<exerciseDate>2012-05-31T00:00:00.000</exerciseDate>
+	<startDate>2011-05-31</startDate>
+	<endDate>2012-05-31</endDate>
+	<exerciseDate>2012-05-31</exerciseDate>
 	<sale>
 		<sal:saleID>1</sal:saleID>
-		<sal:orderDate>2011-05-31T00:00:00.000</sal:orderDate>
+		<sal:orderDate>2011-05-31</sal:orderDate>
 		<sal:customer>
 			<cu:name>Arminho Miguel de Sá Santos</cu:name>
 			<cu:customerID>1</cu:customerID>
@@ -90,7 +90,7 @@
 	</sale>
 	<sale>
 		<sal:saleID>2</sal:saleID>
-		<sal:orderDate>2011-06-30T00:00:00.000</sal:orderDate>
+		<sal:orderDate>2011-06-30</sal:orderDate>
 		<sal:customer>
 			<cu:name>Lara Gonçalves</cu:name>
 			<cu:customerID>2</cu:customerID>

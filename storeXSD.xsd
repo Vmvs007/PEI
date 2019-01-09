@@ -7,12 +7,11 @@
 	elementFormDefault="qualified">
 	
 	<xs:import schemaLocation="CommonTypesXSD.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
-
-	
-		<xs:complexType name="store">
+	<xs:element name="store">
+		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="name" type="xs:string"/>
-				<xs:element name="storeID" type="xs:integer"/>
+				<xs:element name="storeID" type="xs:positiveInteger"/>
 				<xs:element name="nif" type="c:typeNIF"/>
 				<xs:element name="address">
 					<xs:complexType>
@@ -34,6 +33,11 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
+				<xs:element name="totalProducts" type="xs:integer"/>
+				<xs:element name="totalSales" type="xs:integer"/>
+				<xs:element name="avegePrice" type="xs:double"/>
+				<xs:element name="exercise" type="ex:exercise" minOccurs="1" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
+	</xs:element>
 </xs:schema>

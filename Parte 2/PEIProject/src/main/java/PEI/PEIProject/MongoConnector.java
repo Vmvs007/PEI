@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Filters.text;
 
 public class MongoConnector {
     private MongoClient mongoClient;
@@ -27,7 +28,7 @@ public class MongoConnector {
         MongoDatabase database = mongoClient.getDatabase(databaseName);//"restaurantsDB"
         MongoCollection<Document> collection = database.getCollection(collectionName);//"restaurants"
        // Bson filter = eq("", "");//borough, bronx
-
+       // Bson filter = text();
         //Print for testing
         //while(cursor.iterator().hasNext()) {
         //    System.out.println(cursor.iterator().next());

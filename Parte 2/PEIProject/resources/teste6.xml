@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><CurrencyRate><id/><CurrencyRateID>7</CurrencyRateID><CurrencyRateDate>2011-05-31 00:00:00.000</CurrencyRateDate><FromCurrencyCode>USD</FromCurrencyCode><ToCurrencyCode>EUR</ToCurrencyCode><RateVal>0.9703</RateVal></CurrencyRate>
+<?xml version="1.0" encoding="UTF-8"?><CurrencyDetails><CurrencyRateID/><CurrencyRateDate/><FromCurrencyCode/><ToCurrencyCode/><RateVal/></CurrencyDetails>

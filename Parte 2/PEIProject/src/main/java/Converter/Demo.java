@@ -2,16 +2,22 @@ package Converter;
 
 import com.mongodb.*;
 import com.mongodb.client.FindIterable;
+import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Accumulators;
+import com.mongodb.client.model.Aggregates;
+import com.mongodb.client.model.Filters;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.json.JSONObject;
 import org.json.XML;
+import static java.util.Arrays.asList;
 
 import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
@@ -32,31 +38,43 @@ public class Demo {
     public static void main(String args[]) {
         MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         MongoDatabase database = mongoClient.getDatabase("PEIProject");
-        MongoCollection<Document> collection = database.getCollection("CurrencyDetails");
-        Bson filter = eq("ToCurrencyCode", "USD");
-        Bson filter2 = text("");
-
+        MongoCollection<Document> collection = database.getCollection("ProductDetails");
+        //Bson filter = eq("ToCurrencyCode", "USD");
+        Bson filter = text("{}");
         //como exemplo apenas estão a ser retornados dois documentos
-        FindIterable<Document> cursor = collection.find("").limit(10);
+        BasicDBObject testess= new BasicDBObject();
+        testess.put("ToCurrencyCode","USD");
+         //   FindIterable<Document> cursor = collection.find(testess).limit(10);
+        FindIterable<Document> cursor= collection.find(testess);
+        Block<Document> printBlock = new Block<Document>() {
+            @Override
+            public void apply(final Document document) {
+                System.out.println(document.toJson());
+            }
+        };
+
+        /*
+        AggregateIterable<Document> cursor2 = collection.aggregate(Arrays.asList(
+                new Document ("$group");  //.forEach(printBlock);
+
+     */
+
         MongoCursor it = cursor.iterator();
         int i=1;
-        String xml="<root>";
-        String aux;
         while(it.hasNext()){
             Document obj = (Document) it.next();
-            //Demo.processDate(obj);
+
+            //  Demo.processDate(obj);
 
             JSONObject json = new JSONObject(obj.toJson());
-            aux= XML.toString(json, "root").replace("$","").replace("<root>","").replace("</root>","");
-            System.out.println(aux);
-            xml+=aux;
+
+            String xml = XML.toString(json, "root").replace("$","");
+
             //invocação da classe responsável por aplicar o XSL
-            //XSLTransformer.transform("resources/", xml,"transformationRules.xsl", "teste"+i+".xml");
+            XSLTransformer.transform("resources/", xml,"transformationRules.xsl", "teste"+i+".xml");
             i++;
+            System.out.println(xml);
         }
-        xml+="</root>";
-        System.out.println(xml);
-        XSLTransformer.transform("resources/", xml,"transformationRules.xsl", "testefinal.xml");
         //fechar a ligação ao MongoDB
         mongoClient.close();
 

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output indent="yes"/>
-    <xsl:strip-space elements="*"/>
-    <xsl:template match="/*">
-        <xsl:apply-templates select="*[1]"/>
 
-
-    </xsl:template>
-    <xsl:template match="/*/*[1]">
-        <xsl:copy>
-            <xsl:copy-of select="@*|node()|following-sibling::*/*"/>
-        </xsl:copy>
+    <xsl:template match="/">
+        <CurrencyDetails>
+            <CurrencyRateID><xsl:value-of select="/root/CurrencyRateID/text()"/></CurrencyRateID>
+            <CurrencyRateDate><xsl:value-of select="/root/CurrencyRateDate/text()"/></CurrencyRateDate>
+            <FromCurrencyCode><xsl:value-of select="/root/FromCurrencyCode/text()"/></FromCurrencyCode>
+            <ToCurrencyCode><xsl:value-of select="/root/ToCurrencyCode/text()"/></ToCurrencyCode>
+            <RateVal><xsl:value-of select="/root/RateVal/text()"/></RateVal>
+        </CurrencyDetails>
     </xsl:template>
 </xsl:stylesheet>

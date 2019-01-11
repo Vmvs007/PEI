@@ -18,7 +18,7 @@
 			<xs:element name="totalProducts" type="xs:integer"/>
 			<xs:element name="totalDifProducts" type="xs:integer"/>
 			<xs:element name="totalDifClients" type="xs:integer"/>
-			<xs:element name="valuePerClient">
+			<xs:element name="valuePerClient" minOccurs="1" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="clientID" type="xs:positiveInteger"/>
@@ -27,7 +27,7 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="salesPerProduct">
+			<xs:element name="salesPerProduct" minOccurs="1" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="productID" type="xs:positiveInteger"/>
@@ -36,7 +36,7 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="totalValuePerCurrency">
+			<xs:element name="totalValuePerCurrency" minOccurs="1" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="currencyID" type="xs:positiveInteger"/>

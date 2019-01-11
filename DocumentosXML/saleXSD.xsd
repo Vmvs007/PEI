@@ -23,8 +23,8 @@
 				<xs:element name="total" type="xs:double"/>
 				<xs:element name="taxAmt" type="xs:double"/>
 				<xs:element name="taxAmtPer" type="xs:double"/>
-				<xs:element name="totalProducts" type="xs:double"/>
-				<xs:element name="totalDifProducts" type="xs:double"/>
+				<xs:element name="totalProducts" type="xs:integer"/>
+				<xs:element name="totalDifProducts" type="xs:integer"/>
 				<xs:element name="productAveragePrice" type="xs:double"/>	
 				<xs:element name="saleLine" type="sl:saleLine" minOccurs="1" maxOccurs="unbounded"/>	
 			</xs:sequence>
